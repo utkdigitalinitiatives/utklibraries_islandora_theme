@@ -65,6 +65,7 @@ css[global.css][options][weight] = '10'
 css[overarching.css][options][weight] = '12'
 css[overarching.css][name] = 'CSS to apply to all pages'
 css[overarching.css][name] = 'UTK Libraries CSS'
+stylesheets[all][] = css/islandora_internet_archive_bookreader.css
 version = '1.x'
 settings[toggle_logo] = '0'
 settings[toggle_name] = '1'
