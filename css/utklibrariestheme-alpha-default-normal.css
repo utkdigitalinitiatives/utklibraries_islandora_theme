@@ -1,0 +1,27 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+ 
+ .footer-map {
+    width: 90.25%;
+}
+@-moz-document url-prefix() {
+/* Styles */
+ .sitename-img {
+   margin-top: -1.34em;
+}
+}
+.sf-menu.sf-style-default a {
+    -moz-transition: all 0.25s ease-in-out 0s;
+    background: url("../images/bg-nav1-a.png") repeat-x scroll center top #F77F00;
+    border-color: -moz-use-text-color #444444 -moz-use-text-color #FAAE5E;
+    border-style: none solid;
+    border-width: medium 1px 0;
+    color: #FFFFFF;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 6px 16px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}

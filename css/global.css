@@ -1,0 +1,777 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+
+/* Basic Styles */
+body {
+	background: #fff url(../images/bg-body-mobile.jpg) repeat-x;
+	font: 16px/24px  Cambria, Georgia, Times, TimesNewRoman, "Times New Roman", serif;
+	color: #444;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+::-webkit-selection { 
+	background: #f77f00; 
+	color: rgb(250,250,250); 
+	text-shadow: none; 
+}
+::-moz-selection { 
+	background: #f77f00; 
+	color: rgb(250,250,250); 
+	text-shadow: none; 
+}
+::selection { 
+	background: #f77f00; 
+	color: rgb(250,250,250); 
+	text-shadow: none;
+}
+
+
+#zone-postscript {
+border-top: 1px solid #ccc;	
+padding-top:20px;	
+	
+}
+
+#section-content {
+	/*background:transparent  url(../images/bg_content.jpg)  right bottom no-repeat;*/
+	background: none;
+	padding-bottom: 85px;
+}
+
+.item-list li {
+  list-style: square;
+}
+
+
+/* Main Menu Verticle */
+
+/*====[ Main Menu  structure ]========================================= */
+
+.block-menu ul.menu {
+	/* Removed by Mark
+	background: #f77f00 url(../images/--sprite.png) 0 -240px repeat-x; */
+	width: 100%;
+	/* Removed by Mark
+	float: left; */
+	padding: 0;
+	margin: 0 0 2.5em 0;
+}
+
+
+/*====[ Main Menu-Vertical ]========================================= */
+
+#block-system-main-menu.block.block-system,
+#block-system-navigation.block.block-system {
+background:transparent;	
+padding:0;
+}
+
+.block-menu {
+border-top: 0px #f77f00 solid;	
+}
+
+.block-menu .block-title {
+padding: 0 0 0 10px;
+}
+
+.block-menu ul.menu {
+	background: #F0EDE4;
+}
+.block-menu ul.menu li {
+	padding: 0;
+	width: 100% ;
+	float: left;
+	line-height: 1;
+	height:100%;
+	vertical-align: middle;
+	list-style:none;
+	margin: 0;
+        color: #666666;
+}
+.block-menu ul.menu li a {
+	padding: 10px 0 10px 20px;
+	background-position: 5px 6px;
+}
+.block-menu ul.menu a:hover {
+	background-color: #4c4d4f;
+	background-position: 10px 6px;
+	color: #f0ede4;
+}
+
+.block-menu ul.menu ul {
+	padding: 0;
+	margin: 0;
+	background: #FAF9F6;
+}
+.block-menu ul.menu ul li {
+	background: #FAF9F6;
+}
+.block-menu ul.menu ul li a {
+	background-position: 20px 6px;
+	padding-left: 35px;
+}
+.block-menu ul.menu ul li a:hover {
+	background-position: 25px 6px;
+}
+
+/* #FLEXIBLE NAVIGATION  */
+
+.block-menu ul.menu li a {
+	border-bottom: 1px solid #ccc;
+        color: #517C96;
+	display: block;
+	text-decoration: none;
+	background: url(../images/--sprite.png) 5px  -122px no-repeat;
+	-webkit-transition: all 0.25s ease-in-out;
+	   -moz-transition: all 0.25s ease-in-out;
+	     -o-transition: all 0.25s ease-in-out;
+	        transition: all 0.25s ease-in-out;
+	        }
+.block-menu ul.menu li a:hover {
+	background-position: 10px -122px;
+	-webkit-transition: all 0.25s ease-in-out;
+	   -moz-transition: all 0.25s ease-in-out;
+	     -o-transition: all 0.25s ease-in-out;
+	        transition: all 0.25s ease-in-out;
+}
+
+/* User Login Block */
+
+#block-user-login.block.block-user {
+		margin-bottom: 20px; 
+		border: 1px solid #C7C4BC;
+		background: #FAF9F6;
+		padding: 5%;
+		-webkit-border-radius: 6px;
+		   -moz-border-radius: 6px;
+		 -khtml-border-radius: 6px;
+			    border-radius: 6px;	
+}
+
+/* Block  */
+
+#region-sidebar-first .block,
+.block-aggregator {      /* All Sidebar First Block  */
+	padding: 1em;
+	border-top: #f77f00 solid 5px;
+	font-size: 90%;
+	background: #DFDDD6;
+	color: #4c4d4f;
+	margin-bottom: 1em;
+}
+#region-sidebar-second .block,
+.block-aggregator {      /* All Sidebar First Block  */
+        padding: 1em;
+        border-top: #f77f00 solid 5px;
+        font-size: 90%;
+        background: #DFDDD6;
+        color: #4c4d4f;
+        margin-bottom: 1em;
+}
+
+
+h2.block-title {
+font-size:22px;	
+padding-bottom:10px;	
+}
+
+#logo { /* Wrapping link for logo */
+  float: left; /* LTR */
+  margin: 0;
+  padding: 20px 0 0 10px;;
+}
+
+/* Tables */
+table {
+	margin-bottom:1.4em;
+	width:100%;
+	border: solid 1px #ccc;
+	border-top: solid 5px #f77f00;
+	background-color:#DFDDD6;
+	font-size: 1em;
+	font-trasform:upper;
+	}
+th {
+	text-align: center;
+	color: #f0ede4;
+	}
+thead th {
+	background:#4c4d4f;
+	}
+th, td, caption {padding:2px 5px 2px 5px;}
+
+tr:nth-child(even) td, tr.even td {background-color:#f0ede4;}
+tr {
+	border-top: solid 1px #ccc;
+}
+tfoot {font-style:italic;}
+caption {background:#eee;}
+
+/*  my modifications - cindy */
+ul.menu li {
+margin: 0 0 0 0em;
+}
+.sf-menu.sf-style-default {
+    float: left;
+    margin-bottom: 0em;
+    padding: 0;
+    margin-top: -0.7em;
+}
+.sf-menu.sf-style-default.sf-navbar {
+    width: 100%;
+}
+.sf-menu.sf-style-default ul {
+    padding-left: 0;
+    	background: #f77f00 url(../images/--sprite.png) 0 -240px repeat-x;
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0 0 2.5em 0;
+}
+.sf-menu.sf-style-default a {
+    font-family: Arial, Helvetica, sans-serif;
+	padding: 6px 16px;
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	font-size: 0.9em;
+	border-bottom: 0;
+	border-left: #FAAE5E 1px solid;
+	border-right: 1px solid #444;
+	border-top: none; 
+	text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0;
+	background: #f77f00 url(../images/bg-nav1-a.png) top center repeat-x;
+	-webkit-transition: all 0.25s ease-in-out;
+	   -moz-transition: all 0.25s ease-in-out;
+	     -o-transition: all 0.25s ease-in-out;
+	        transition: all 0.25s ease-in-out;
+
+}
+.sf-menu.sf-style-default a, .sf-menu.sf-style-default a:visited {
+    color: #ffffff;
+}
+.sf-menu.sf-style-default a.sf-with-ul {
+    padding-right: 1.25em;
+}
+.sf-menu.sf-style-default.rtl a.sf-with-ul {
+    padding-left: 2.25em;
+    padding-right: 1em;
+}
+.sf-menu.sf-style-default span.sf-description {
+    color: #F77F00;
+    display: block;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    margin: 5px 0 0 5px;
+    padding: 0;
+}
+.sf-menu.sf-style-default li, .sf-menu.sf-style-default.sf-navbar {
+    background: none repeat scroll 0 0 #f77F00;
+    margin-top: -5px;
+}
+.sf-menu.sf-style-default li li {
+    background: none repeat scroll 0 0 #F77F00;
+}
+.sf-menu.sf-style-default li li li {
+    background: none repeat scroll 0 0 #F77F00;
+}
+.sf-menu.sf-style-default li:hover, .sf-menu.sf-style-default li.sfHover, .sf-menu.sf-style-default a:focus, .sf-menu.sf-style-default a:hover, .sf-menu.sf-style-default a:active {
+    background: none repeat scroll 0 0 #F77F00;
+    outline: 0 none;
+    color: #666666;
+    
+}
+.sf-menu.sf-style-default ul.sf-megamenu li.sf-megamenu-wrapper ol, .sf-menu.sf-style-default ul.sf-megamenu li.sf-megamenu-wrapper ol li {
+    margin: 0;
+    padding: 0;
+   
+}
+.sf-menu.sf-style-default ul.sf-megamenu li.sf-megamenu-wrapper a.menuparent {
+    font-weight: bold;
+}
+.sf-menu.sf-style-default ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+    display: inline;
+    float: left;
+    width: 12em;
+    
+}
+.sf-menu.sf-style-default.rtl ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+    float: right;
+}
+.sf-menu.sf-style-default li.sf-parent-children-1 ul.sf-megamenu {
+    width: 12em;
+}
+.sf-menu.sf-style-default li.sf-parent-children-2 ul.sf-megamenu {
+    width: 24em;
+}
+.sf-menu.sf-style-default li.sf-parent-children-3 ul.sf-megamenu {
+    width: 36em;
+}
+.sf-menu.sf-style-default li.sf-parent-children-4 ul.sf-megamenu {
+    width: 48em;
+}
+.sf-menu.sf-style-default li.sf-parent-children-5 ul.sf-megamenu {
+    width: 60em;
+}
+.sf-menu.sf-style-default li.sf-parent-children-6 ul.sf-megamenu {
+    width: 72em;
+}
+.sf-menu.sf-style-default li.sf-parent-children-7 ul.sf-megamenu {
+    width: 84em;
+}
+.sf-menu.sf-style-default li.sf-parent-children-8 ul.sf-megamenu {
+    width: 96em;
+}
+.sf-menu.sf-style-default li.sf-parent-children-9 ul.sf-megamenu {
+    width: 108em;
+}
+.sf-menu.sf-style-default li.sf-parent-children-10 ul.sf-megamenu {
+    width: 120em;
+}
+.profile .user-picture {
+  float: left;
+  margin: 0 1em 1em 0;
+}  
+.profile h3 {
+    border-bottom: 1px solid #CCCCCC;
+    display: none;
+}
+.field-name-field-profile-college-unit {
+    font-weight: bold;
+    padding-bottom: 1em;
+    }
+    
+.field-name-field-profile-position {
+    font-weight: bold;
+    padding-bottom: 1em;
+    }
+.field-name-field-profile-research-interests{
+    padding-bottom: 1em;
+    }
+.field-name-field-profile-cv {
+    padding-bottom: 1em;
+    }
+.field-name-field-profile-web-page {
+    padding-bottom: 1em;
+    }
+thead th {
+  color: #F0EdE4;
+}
+.calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview {
+  background: none repeat scroll 0 0 #B9E1E2;
+  overflow: hidden;
+  padding: 0 3px;
+  width: auto;
+}
+.form-item-name {
+   font-weight: bold;
+   }
+   
+.form-item-pass { 
+  font-weight: bold;
+   }
+.form-item .description {
+    display: block;
+    font-size: 0.85em;
+    margin: 0 9em 0 10em;
+}
+.user-picture{
+    background: none repeat scroll 0 0 #F0EDE4;
+    border: 1px solid #CCCCCC;
+    padding: 2px;
+}
+a:link, a:visited {
+    color: #517c96;
+    text-decoration: none;
+}
+
+a:hover {
+   color: #F77F00;
+   }
+a:active {
+   color: #F77F00;
+   }
+.field a:link {
+     font-weight: bold;
+     color: #517C96;
+     }
+.field a:visited {
+     color: #517C96;
+     }
+.field a:hover {
+     color: #F77F00;
+     }
+.field a:active {
+    color #F77F00 !important;
+    }
+.view a:link {
+     color: #517C96;
+     }
+.view a:visitied {
+    color: #517C96;
+    }
+.view a:hover {
+    color: #F77F00;
+    }
+.view a:active {
+    color: #F77F00 !important;
+    }
+
+footer#section-footer.section {
+    background: url("../images/bg-giving.png") repeat-x scroll 0 0 #F0EDE4;
+    padding: 0;
+}
+#footernav, .socialsection {
+    margin-right: 0;
+}
+.footer-column {
+    margin-left: 1.0416%;
+    margin-right: 1.0416%;
+    width: 100%;
+}
+.giving {
+    float: left;
+    padding: 1.5em 0;
+    text-align: center;
+    width: 100%;
+}
+.footer-column {
+    margin-left: 1.0416%;
+    margin-right: 1.0416%;
+    width: 100%;
+}
+#zone-utkfooter-wrapper {
+    background: url("../images/bg-mainfooter.png") repeat-x scroll left bottom #2C2D2E;
+    float: left;
+    padding: 25px 0;
+    width: 100%;
+}
+#zone-utkindicia-wrapper {
+    background: none repeat scroll 0 0 #4C4D4F;
+    color: #CCCCCC;
+    float: left;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+    }
+.ico-wutk a {
+    margin-right: 5px;
+}
+.ico-scoop a {
+    margin-right: 5px;
+}
+.ico-tnjn a {
+    background: url("/sites/default/files/tnjn_logo.jpg") no-repeat scroll 0 0 transparent;
+    margin-right: 5px;
+    width: 20px;
+}
+.ico-facebook a {
+    margin-right: 5px;
+}
+.ico-twitter a {
+    margin-right: 5px;
+}
+.sf-menu {
+   display: none;
+   }
+
+.sitename-img {
+    display: none;
+    }
+    .site-name {
+    display: block;
+    }
+.block-menu-sis-main ul.menu {
+    display: none;
+    }
+.logo {
+    display: block;
+    float: left;
+    margin-bottom: 0;
+    margin-top: 32px;
+    text-align: center;
+    width: 100%;
+}
+#zone-menu {
+    background-color: #FFFFFF;
+    margin-bottom: 1em;
+    margin-top: 0em;
+    }
+#block-menu-menu-sis-main select {
+    background: url("../images/--sprite.png") no-repeat scroll right -210px #F77F00;
+    color: #F0EDE4;
+    margin: 1em 0 0 4%;
+    padding: 5px 0 5px 4%;
+    width: 90%;
+}
+.view caption {
+    font-size: 1.5em;
+    }
+h1#page-title{
+    font-size: 2em;
+    }
+.search {
+    margin: 36px auto 0px;
+   }
+ .profile .field-group-fieldset{
+     padding: 2%;
+     width: 80%;
+     }
+.field-name-field-bov-service {
+    margin-top: 1em;
+}
+.field-name-field-bov-honors {
+    margin-top: 1em;
+   }
+.field-name-field-bov-link {
+     font-size: 1.5em;
+     margin-top: 1em;
+     }
+td.views-field-field-bov-picture {
+    display: none;
+    }
+th.views-field-field-bov-picture {
+    display: none;
+    }
+h1, h2 {
+    font-family: Arial,Helvetica,sans-serif;
+}
+.giving {
+	/*background: #f0ede4 url(../images/bg-giving.png) repeat-x;*/
+	padding: 1.5em 0;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.giving h4 {
+	font-size: 2em;
+	font-family: Cambria, Georgia, Times, TimesNewRoman, "Times New Roman", serif;
+	font-style: italic;
+	margin-bottom: 0;
+}
+.giving h4 a {
+	color: #f77f00;
+}
+
+.field-label-inline .field-label, .field-label-inline .field-items, .field-label-inline .field-item {
+    display: inline;
+    padding-right: 10px;
+}
+ .site-slogan {
+
+    display: none;
+}
+.view caption li {
+ list-style: none;
+}
+.site-name, .site-slogan {
+    margin-bottom: 0.5em;
+}
+.block-jump-menu select {
+   background-color: #F77F00;
+   color: #F0EDE4;
+  }
+.block-jump-menu-m-menu-utk-toolbar select {
+   background-color: #4C4D4F;
+   color: #A8A7A3;
+   box-shadow: 3px 3px 3px rgba (0, 0, 0, 0.2);
+   margin: 0em 0 0 0%;
+   padding: 2px 0 5px 4%;
+   width: 90%;
+   position: fixed;
+   z-index: 5000;
+}
+
+.block-delta-blocks-site-name  {
+    float: right;
+    margin-left: 10em;
+    margin-top: -6em;
+    display: inline;
+    font-size: 0.7em;
+   }
+.logo {
+  width: 36%;
+  margin-right: 24em;
+  display: inline;
+  }
+.zone-branding {
+   display: none;
+   }
+.flex-caption {
+    width: 88%;
+    font-size: 0.7em;
+}
+.flex-caption a:link {
+    color: #ffffff;
+}
+.flex-caption a:visited {
+    color: #ffffff;
+}
+h1.site-name, h2.site-name {
+    font-size: 26px;
+    margin-left: 2em;
+}
+.search input.searchfield {
+   width: 68%;
+}
+.site-name {
+    margin-top: 6px;
+}
+td.views-field.views-field-picture img{
+       display: none;
+        
+        }
+.block-views a:link {
+   font-size: 1.2em;
+}
+.views-field-citation {
+     margin-bottom: 1em;
+}
+.colorbox img {
+   margin-top: 1em;
+}
+/* Removed by Mark
+.block a:link {
+     color: #517C96;
+} */
+.block a:hover {
+     color: #F77F00;
+}
+h2.node-title a:link{
+     color: #666666;
+}
+h2.node-title a:visited {
+    color: #666666;
+}
+
+h2.node-title a:hover {
+    color: #F77F00;
+}
+.flex-caption a:link {
+     color: #ffffff;
+}
+.node-readmore a:link {
+    color: #333333;
+}
+.cci-news a {
+    padding: 8px;
+    margin-left:10px
+}
+.flexslider ul.slides, .flex-nav-container ol.flex-control-nav, .flex-nav-container ul.flex-direction-nav, .flexslider ul.slides li img {
+    margin: 0 0 0 15px;
+}
+.flex-caption {
+   margin-left: 15px;
+}
+.node-readmore {
+    float: right !important;
+    display:  inline !important;
+}
+.node-sis-course h2.node-title {
+    font-size: 24px;
+    margin-top: 20px;
+}
+.field-name-field-syllabus {
+   margin-bottom: 20px;
+}
+.more-link {
+     text-align: left;
+     background: url("/sites/default/files/Calendar_24x24.png") no-repeat scroll right transparent;
+}
+
+/* Added by Mark to Match with Libraries */
+header#section-header {
+	background: url(http://www.lib.utk.edu/template/2013/images/interface/bg-body.jpg) repeat-x rgb(255, 255, 255);
+}
+
+/* NAVIGATION */
+.navigationtop {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.navigationtop li {
+  float: left;
+  list-style-type: none;
+  font-size: 1.1em;
+}
+
+.navigationtop a {
+	font-family: Cambria, Helvetica, sans-serif;
+	padding: 8px 25px;
+	display: block;
+	color: #000000;
+	font-weight: normal;
+	font-size: 0.9em;
+	border-bottom: 0;
+	border-right: 1px solid #c2c2c2;
+	text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0;
+	background: #f1f1f1;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+
+/*
+.navigationtop a:hover,
+.navigationtop li.active > a {
+  background: #111;
+  color: #5F97B8;
+}*/
+
+/* SUBNAVIGATION */
+.subNavigation {
+  position: absolute;
+  display: none;
+  list-style:none;
+  z-index:110;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+.subNavigation li {
+	float: none;
+	list-style-type: none;
+	margin-bottom:0px;
+	font-size: 0.9em;
+}
+
+.subNavigation li a {
+	background-image: none !important;
+	width: 125px;
+	text-align: left;
+	border: none;
+	font-family: Cambria, Helvetica, sans-serif;
+	padding: 8px 25px;
+	display: block;
+	color: #000000;
+	font-weight: normal;
+	border-bottom: 0;
+	border-right: 1px solid #c2c2c2;
+	text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0;
+	background: #f1f1f1;
+}
+
+.subNavigation li:last-child a {
+}
+
+.subNavigation li a:hover {
+}
+
+.clear {
+	clear: both;
+}
+
+/* Menu */
+div#zone-menu {
+	background: none;
+}
+
+/* Fix Branding */
+div#zone-branding {
+	background: url(../../sis/images/bg-mast-1260.png);
+}
+

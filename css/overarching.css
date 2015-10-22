@@ -1,0 +1,153 @@
+/* For the Main Page */
+.feed-icon.clearfix {
+	display: none;
+}
+
+/*ul.links.inline {
+	display: none;
+}*/
+
+img.digcolimg {
+	border: 2px solid;
+	border-radius: 25px;
+}
+
+/* For Digital Collections Page */
+.digcolcontatin {
+	text-align: center;
+	float: left;
+	max-width: 100%;
+	width: 30%;
+}
+
+.rightdigcolcontatin {
+	text-align: center;
+	float: left;
+	max-width: 100%;
+	width: 30%;
+}
+
+/* For Search Box */
+input#edit-collection-query-term {
+	display: inline;
+}
+
+select#edit-collection-select {
+	width: 50%;
+	float: left;
+}
+
+input#edit-collection-query-term {
+	width: 30%;
+}
+
+div#region-splashbanner {
+	margin-bottom: 1em;
+}
+
+select#edit-collection-select {
+	margin-right:1em;
+}
+
+/* Hide Clip Image Text Since It Doesn't Work */
+a#clip {
+	display: none;
+}
+
+/* Round Facets */
+section#block-islandora-solr-basic-facets {
+	border-radius: 5px;
+}
+
+/* New Splash Menu */
+ul.splashmenu {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.splashmenu > li.leaf {
+	float: left;
+	list-style-type: none;
+	list-style: none;
+	list-style-image: none;
+}
+
+.splashmenu > li.leaf > a {
+	padding: 0px 10px;
+	border-right: 1px solid #c2c2c2;
+	font-family: Cambria, Helvetica, sans-serif;
+}
+
+.splashmenu > li.leaf > a.active {
+	font-weight: 600;
+	color: #517c96;
+}
+
+h2.block-title {
+	display: none;
+}
+
+/* Collections Page */
+
+.collectionblurb {
+	font: 8em sans-serif;
+	padding-top: 6px;
+	padding-bottom: 4px;
+	font: 13px/1 Verdana, Helvetica, Arial, sans-serif;
+}
+
+.collectionentry {
+	float: left;
+	padding-top: 0px;
+	max-width: 30%;
+}
+
+.collectionentry img {
+	padding: 10px;
+	padding-bottom:20px;
+	max-width: 90%;
+	max-height: 90%
+}
+
+/* Fix New Search Box */
+
+select#edit-collection-select {
+	max-width: 50%;
+}
+
+input#edit-islandora-simple-search-query {
+  max-width: 45%;
+  }
+  
+/* WWII Oral Histories Project */
+
+.rightwwii {
+	float: right;
+	margin-left: 20px;
+	
+	border-radius: 5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #f38001;
+	padding: 5px;
+}
+
+.leftwwii {
+	float: left;
+	margin-right: 20px;
+	border-radius: 5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #f38001;
+	padding: 5px;
+}
+
+aside.wwii {
+	float:right;
+	margin-left: 50px;
+	border-radius: 5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #f38001;
+	padding: 10px;
+}
